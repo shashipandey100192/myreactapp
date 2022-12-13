@@ -1,5 +1,5 @@
 
-import './App.css';
+
 import abc from './pages/Home';
 
 function App() {
