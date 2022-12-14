@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import Abc from './pages/Home';
+import Welcome from './components/Welcome';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-   <Abc />
+    <Welcome></Welcome>
   </React.StrictMode>
 );
 
