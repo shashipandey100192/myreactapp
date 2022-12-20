@@ -4,14 +4,18 @@ import Welcome from './components/Welcome';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Home from './components/Home';
 import About from './components/About';
+import Mynav from './components/Mynav';
+import Myerror from './components/Myerror';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
+    <Mynav />
       <Routes>
           <Route path='' element={<Welcome />}/>
           <Route path='home' element={<Home/>}/>
           <Route path='about' element={<About />} />
+          <Route path='*' element={<Myerror/>}/>
         </Routes>
     </BrowserRouter>
   </React.StrictMode>
