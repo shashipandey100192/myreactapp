@@ -6,6 +6,7 @@ import Home from './components/Home';
 import About from './components/About';
 import Mynav from './components/Mynav';
 import Myerror from './components/Myerror';
+import RecHome from './reactbootstrap/RecHome';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
@@ -16,6 +17,7 @@ root.render(
           <Route path='home' element={<Home/>}/>
           <Route path='about' element={<About />} />
           <Route path='*' element={<Myerror/>}/>
+          <Route path='reactbootstrap' element={<RecHome/>}/>
         </Routes>
     </BrowserRouter>
   </React.StrictMode>
