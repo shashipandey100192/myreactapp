@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link, useParams } from 'react-router-dom';
 
 
 const items =[
@@ -51,6 +52,7 @@ const items =[
 
 
 function Datalist() {
+  const id = useParams();
   return (
     <div>
       <h1>List of Items</h1>
@@ -138,6 +140,7 @@ react js
  {items.map((i)=>(
         
           <div className='col-3'>
+            <Link to={`/mymap/${i.itemid}`}>
           <div className="card">
               <img src={i.itemimage} className="card-img-top" alt="..." />
               <div className="card-body">
@@ -146,6 +149,7 @@ react js
                 <a href="#" className="btn btn-primary">{i.weight}</a>
               </div>
             </div>
+            </Link>
           </div>
  ))}
 

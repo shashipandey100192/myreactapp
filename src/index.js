@@ -8,6 +8,7 @@ import Mynav from './components/Mynav';
 import Myerror from './components/Myerror';
 import RecHome from './reactbootstrap/RecHome';
 import Datalist from './components/Datalist';
+import Myproductdetail from './components/Myproductdetail';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
@@ -20,6 +21,7 @@ root.render(
           <Route path='*' element={<Myerror/>}/>
           <Route path='reactbootstrap' element={<RecHome/>}/>
           <Route path='mymap' element={<Datalist />}/>
+          <Route path='mymap/:id' element={<Myproductdetail/>}/>
         </Routes>
     </BrowserRouter>
   </React.StrictMode>
