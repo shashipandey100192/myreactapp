@@ -10,6 +10,7 @@ import RecHome from './reactbootstrap/RecHome';
 import Datalist from './components/Datalist';
 import Myproductdetail from './components/Myproductdetail';
 import Mymuibutton from './meterialUI/Methome';
+import Mycustompage from './components/Mycustompage';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
@@ -24,6 +25,8 @@ root.render(
           <Route path='mymap' element={<Datalist />}/>
           <Route path='mymap/:id' element={<Myproductdetail/>}/>
           <Route path='mui' element={<Mymuibutton/>}/>
+          <Route path='service' element={<Mycustompage/>}/>
+
         </Routes>
     </BrowserRouter>
   </React.StrictMode>
