@@ -16,7 +16,7 @@ function Mynav() {
         <li className="nav-item"><Link to="about" className="nav-link">Features</Link></li>
         <li className="nav-item"><Link to="mymap" className="nav-link">Data list</Link></li>
         <li className="nav-item"><Link to="service" className="nav-link">FAQs</Link></li>
-        <li className="nav-item"><Link to="form" className="nav-link">About</Link></li>
+        <li className="nav-item"><Link to="doute" className="nav-link">About</Link></li>
       </ul>
     </header>
   </div>
