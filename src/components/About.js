@@ -1,10 +1,24 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle'
 
+
+
+
+
+
 function About() {
+
+
+// useEffect(()=>{
+  
+// });
+
+const mysissiondata = sessionStorage.getItem('myssision');
+
   return (
     <div>
+      <h1>{mysissiondata}</h1>
         <nav className="navbar navbar-expand-lg bg-light">
   <div className="container-fluid">
     <a className="navbar-brand" href="#">Navbar</a>

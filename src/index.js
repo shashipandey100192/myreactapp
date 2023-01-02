@@ -12,6 +12,7 @@ import Myproductdetail from './components/Myproductdetail';
 import Mymuibutton from './meterialUI/Methome';
 import Mycustompage from './components/Mycustompage';
 import Doute from './components/Doute';
+import DataFatch from './components/DataFatch';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
@@ -29,6 +30,7 @@ root.render(
           <Route path='service' element={<Mycustompage/>}/>
           <Route path='doute' element={<Doute/>}/>
           <Route path='myhomepage' element={<Myproductdetail/>}/>
+          <Route path='mydata' element={<DataFatch/>}/>
 
         </Routes>
     </BrowserRouter>
