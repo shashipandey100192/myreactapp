@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { lazy, Suspense } from 'react';
 import ReactDOM from 'react-dom/client';
 import Welcome from './components/Welcome';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
@@ -12,7 +12,11 @@ import Myproductdetail from './components/Myproductdetail';
 import Mymuibutton from './meterialUI/Methome';
 import Mycustompage from './components/Mycustompage';
 import Doute from './components/Doute';
-import DataFatch from './components/DataFatch';
+// import DataFatch from './components/DataFatch';
+const DataFatch = lazy( ()=>import('./components/DataFatch'));
+const Myload = lazy( ()=>import('./components/Myloading'));
+
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
@@ -30,7 +34,21 @@ root.render(
           <Route path='service' element={<Mycustompage/>}/>
           <Route path='doute' element={<Doute/>}/>
           <Route path='myhomepage' element={<Myproductdetail/>}/>
-          <Route path='mydata' element={<DataFatch/>}/>
+
+          {/* <Route path='mydata' element={<DataFatch/>}/> */}
+          <Route path='mydata' element={
+              <Suspense fallback={<div style={{backgroundColor:'red',fontSize:'50',padding:'50px'}}>loading sdkf hjsdhfjshdf</div>}>
+                  <DataFatch />
+                </Suspense>
+            }/>
+
+
+            <Route path='lazy' element={
+              <Suspense fallback={<div style={{backgroundColor:'red',fontSize:'50',padding:'50px'}}>loading sdkf hjsdhfjshdf</div>}>
+                  <Myload />
+                </Suspense>
+            }/>
+
 
         </Routes>
     </BrowserRouter>
