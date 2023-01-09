@@ -12,6 +12,8 @@ import Myproductdetail from './components/Myproductdetail';
 import Mymuibutton from './meterialUI/Methome';
 import Mycustompage from './components/Mycustompage';
 import Doute from './components/Doute';
+import { Auth0Provider } from '@auth0/auth0-react';
+import Myloginbuttonauth from './components/Myloginbuttonauth';
 // import DataFatch from './components/DataFatch';
 const DataFatch = lazy( ()=>import('./components/DataFatch'));
 const Myload = lazy( ()=>import('./components/Myloading'));
@@ -20,10 +22,18 @@ const Myload = lazy( ()=>import('./components/Myloading'));
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+<Auth0Provider 
+  domain="dev-2lztdozl12hbrfpe.us.auth0.com"
+  clientId="tdHHoVrY6wsKzjSKLliTnysk0G4tR2Si"
+  redirectUri={window.location.origin}
+>
+
+
     <BrowserRouter>
     <Mynav />
       <Routes>
-          <Route path='' element={<Welcome />}/>
+          {/* <Route path='' element={<Welcome />}/> */}
+          <Route path='' element={<Myloginbuttonauth/>}/>
           <Route path='home' element={<Home/>}/>
           <Route path='about' element={<About />} />
           <Route path='*' element={<Myerror/>}/>
@@ -48,10 +58,12 @@ root.render(
                   <Myload />
                 </Suspense>
             }/>
-
-
         </Routes>
     </BrowserRouter>
+
+    </Auth0Provider>
+
+
   </React.StrictMode>
 );
 
