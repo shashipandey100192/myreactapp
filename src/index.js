@@ -14,6 +14,9 @@ import Mycustompage from './components/Mycustompage';
 import Doute from './components/Doute';
 import { Auth0Provider } from '@auth0/auth0-react';
 import Myloginbuttonauth from './components/Myloginbuttonauth';
+import MychildComponent from './components/MychildComponent';
+import Myblog1 from './components/Myblog1';
+import Photo1 from './components/Photo';
 // import DataFatch from './components/DataFatch';
 const DataFatch = lazy( ()=>import('./components/DataFatch'));
 const Myload = lazy( ()=>import('./components/Myloading'));
@@ -35,6 +38,15 @@ root.render(
           {/* <Route path='' element={<Welcome />}/> */}
           <Route path='' element={<Myloginbuttonauth/>}/>
           <Route path='home' element={<Home/>}/>
+          {/* <Route path='routechild' element={<MychildComponent/>}/>
+          <Route path='routechild/blog1' element={<Myblog1/>}/>
+          <Route path='routechild/photo' element={<Photo1/>}/> */}
+
+          <Route path='routechild' element={<MychildComponent/>}>
+              <Route path='blog1' element={<Myblog1/>}/>
+              <Route path='photo' element={<Photo1/>}/>
+          </Route>
+
           <Route path='about' element={<About />} />
           <Route path='*' element={<Myerror/>}/>
           <Route path='reactbootstrap' element={<RecHome/>}/>
