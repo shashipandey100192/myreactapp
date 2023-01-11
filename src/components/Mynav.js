@@ -20,6 +20,7 @@ function Mynav() {
         <li className="nav-item"><Link to="mydata" className="nav-link">Data</Link></li>
         <li className="nav-item"><Link to="lazy" className="nav-link">lazyloding</Link></li>
         <li className="nav-item"><Link to="routechild" className="nav-link">child routing</Link></li>
+        <li className="nav-item"><Link to="data" className="nav-link">Fetch api</Link></li>
       </ul>
     </header>
   </div>

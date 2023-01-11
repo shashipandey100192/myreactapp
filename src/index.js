@@ -17,6 +17,7 @@ import Myloginbuttonauth from './components/Myloginbuttonauth';
 import MychildComponent from './components/MychildComponent';
 import Myblog1 from './components/Myblog1';
 import Photo1 from './components/Photo';
+import Data1 from './components/Data1';
 // import DataFatch from './components/DataFatch';
 const DataFatch = lazy( ()=>import('./components/DataFatch'));
 const Myload = lazy( ()=>import('./components/Myloading'));
@@ -56,6 +57,7 @@ root.render(
           <Route path='service' element={<Mycustompage/>}/>
           <Route path='doute' element={<Doute/>}/>
           <Route path='myhomepage' element={<Myproductdetail/>}/>
+          <Route path='data' element={<Data1/>}/>
 
           {/* <Route path='mydata' element={<DataFatch/>}/> */}
           <Route path='mydata' element={
