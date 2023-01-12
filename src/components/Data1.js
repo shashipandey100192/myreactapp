@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react'
+import React, { Fragment, useEffect, useState } from 'react'
 
 
 
@@ -25,19 +25,34 @@ export default Data1
 
 
 
-export const Mysecond= ()=>{
-    const xyz = ()=>
-    {
-     fetch(`https://jsonplaceholder.typicode.com/photos`)
-        .then((res)=>{
-            console.log(res.json())
-        },[]);
 
+
+
+
+
+export const Mysecond= ()=>{
+
+    const [myd,myf]=useState([]);
+    const xyz = async ()=>
+    {
+     const ducat = await fetch("https://jsonplaceholder.typicode.com/photos")
+     const mydata = await  ducat.json();
+     myf(mydata);
+
+     console.log(ducat);
     }
+
+    useEffect(()=>{
+        xyz()
+    },[])
+
 return(
         <Fragment>
     <h1>welcome</h1>
-    <button type='button' onClick={xyz}>fetch data using </button>
+    <button type='button' onClick={xyz}>fetch data using100 </button>
+    {myd.map((u)=>{
+        return <p key={u.id}>{u.id}</p>
+    })};
     </Fragment>
 )
 
