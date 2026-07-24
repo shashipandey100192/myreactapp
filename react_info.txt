@@ -1,0 +1,126 @@
+react_info
+=========================================
+1) about reactjs
+	1) it's library
+	2) work on virtual object
+	3) work on  component based structures
+	4) create a single application (SPA)
+	5) light weight application
+	6) made by facebook meta
+	7) csr vs ssr
+
+2) files types
+	.js
+	.jsx
+	.ts
+	.tsx
+	.json
+3) work process 
+4) types of error
+	1) syntax ( text red,background black)
+	2) logical( theams, document white)
+
+Note: all html element must have closing tag;
+Note: function should have return type
+NOte: one function have one return
+Note: one return have one element
+Note: replace    a 	====== 	Link
+      replace 	 href	======	to
+      replace	 class	======	className
+----------------------------------------------------------
+Note: hydration error: object(element dis order)
+5)  types of import or export 
+	1) name import or export  {}
+	2) default import/ export
+
+Note: one module(file) have one default function 
+Note:  Parsing error : 	
+6) elements wraping (group)
+	1) html element (div,section,header,footer...)
+	2) <></>	// blank element 
+	3) Fragment	// 
+------------------------------------------------
+7) source path
+	1) CDN(online) 
+	2) src folder (local)
+Note: img elements must have an alt prop
+Note: can't write in to alt "image","photo","picture"
+
+8) types of components
+	1) function component 
+	2) class component
+	3) HOC (High order component)
+	
+9) css link type
+	1) inline
+	2) external
+
+10) style component
+	1) custom html and css 
+	2) bootstrap 
+	3) talwindcss
+	4) MUI
+	5) react bootstrap
+	
+11) JSX  or expression    {}
+	string,number,boolean,variable,function,component,element,operation,object,array,condition		
+------------------------------------------------------
+12) bootstrap (package)(module) 
+	1) install package
+		1) npm install bootstrap		//install latest version of bootstrap
+		2) npm install bootstrap@4.5.0		//install particular version of bootstrap
+		3) npm uninstall bootstrap		// uninstall bootstrap
+	2) import (index.js) 
+		import "bootstrap/dist/css/bootstrap.min.css";
+		import "bootstrap/dist/js/bootstrap.bundle.js";
+	3) inject
+ 
+13) tailwindcss
+	1) npm install tailwindcss @tailwindcss/cli
+	2) create input.css inside src folder and import it
+		@import "tailwindcss";
+	3) open new terminal and run
+		npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch
+	4) auto generate output.css
+	5) import in (index.js)
+		import "./output.css"
+-----------------------------------------------------
+14) icon (react-icons)
+	1) npm install react-icons --save
+	2) import particular icons
+	3) inject 
+
+15) react rouing (navigate)
+	1) npm install react-router-dom
+	2) import { BrowserRouter, Routes,Route } from 'react-router-dom';
+	3) inject 
+
+16) types of routing 
+	1) static route
+	2) dyn routing
+	3) param routing / param query routing 
+	4) wild card routing/ not found page / 404 page/ error page
+	5) nested routing
+	6) moudle routing / lazy loading
+------------------------------------------------------
+17) git /gitHub
+	1) git login 
+	2) Create a new repository(repo)
+Note: local project name and repo name must have same 
+	3) git init 			//initialized git in project  
+	4) git remote -v		// check connection(remote)
+	5) git remote add origin repopath	// create connection to repo
+	 
+	
+	
+
+	 
+ 
+	
+
+
+
+
+
+
+	
