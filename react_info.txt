@@ -110,7 +110,22 @@ Note: local project name and repo name must have same
 	3) git init 			//initialized git in project  
 	4) git remote -v		// check connection(remote)
 	5) git remote add origin repopath	// create connection to repo
-	 
+	 6) git add --all			// add all files on git (added)
+	7) git commit -m "any message"		// message for comment 
+	8) git push origin branchname		// push data on branch 
+	9) git clone pastrepopath		// clone repo 
+	10) npm install			// generate node_module (after clone or if install package)
+	-------------------
+		git add --all
+		git commit -m "msg"
+		git push origin branchname
+		git pull origin branchname
+	--------------------------------
+	11) git branch branchname		// creae a new branch
+	12) git checkout branchname		// switch branch
+
+
+
 	
 	
 
