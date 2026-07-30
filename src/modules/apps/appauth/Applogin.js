@@ -1,13 +1,46 @@
-import React from 'react'
+import React,{useState} from 'react'
 
 function Applogin() {
+
+    // let a = "username";
+    // let pass = "password";
+
+    // const changefun = ()=>{
+    //     alert("welcome");
+    //     pass="text";
+    //     a="enter user";
+    // }
+
+    const [a,b]=useState("usernameghjghjghjghj");
+    const [x,y]=useState("password");
+    const [abcd,updateabcd]=useState("none");
+    const [bg,updatebg]=useState("lightgray");
+
+    const changefun = ()=>{
+        b("ooooooooooooooo");
+        y("text");
+    }
+
+    const xyz = ()=>{
+       if(abcd==="none")
+       {
+         updateabcd("block");
+         updatebg("red");
+       }
+       else
+       {
+         updateabcd("none");
+        updatebg("lightgray");
+        }
+    }
+
 
 
     return (
         <div className="container-fluid bg-light min-vh-100 d-flex justify-content-center align-items-center">
             <div
                 className="card shadow-lg p-4"
-                style={{ width: "400px", borderRadius: "15px" }} >
+                style={{ width: "400px", borderRadius: "15px",backgroundColor:bg }} >
                 <h2 className="text-center mb-4">App Login</h2>
                 <div className="mb-3">
                     <label className="form-label">
@@ -19,6 +52,7 @@ function Applogin() {
                         name="username"
                         className="form-control"
                         placeholder="Enter Username"
+                        value={a}
                     />
                 </div>
 
@@ -28,20 +62,23 @@ function Applogin() {
                     </label>
 
                     <input
-                        type="password"
+                        type={x}
                         name="password"
                         className="form-control"
                         placeholder="Enter Password"
+                        value={a}
+                        style={{display:abcd}}
                     
                     />
                 </div>
 
                 <div className="d-grid">
                     <button
-                        type="submit"
-                        className="btn btn-primary btn-lg">
+                        type="button"
+                        className="btn btn-primary btn-lg" onClick={changefun}>
                         Login
                     </button>
+                    <input type="button" value="show/hide" className='btn btn-success' onClick={xyz}/>
                 </div>
             </div>
         </div>

@@ -124,6 +124,26 @@ Note: local project name and repo name must have same
 	11) git branch branchname		// creae a new branch
 	12) git checkout branchname		// switch branch
 
+--------------------------------------------------
+18) react input or form validation
+	1) custom (core js)
+	2) library(package)
+
+19) react hooks(special function) 
+	1) rules of hooks
+		1) prefix (use)
+		2) can't use inside function or nested function
+		3) can't use inside loop
+		4) can't use bottom of component
+	2) list of hooks
+		useState()
+		useEffect()
+		useRef()
+		useMemo()
+		useNavigator()
+			...
+
+
 
 
 	
