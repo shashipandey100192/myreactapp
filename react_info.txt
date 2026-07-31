@@ -141,9 +141,16 @@ Note: local project name and repo name must have same
 		useRef()
 		useMemo()
 		useNavigator()
-			...
+			...	
+----------------------------------------------
+20) React component lifecycle
+Note:Parsing error?
 
-
+21) types of link
+	1) static
+		<Link>
+	2) dyn 
+		useNavigate()
 
 
 	

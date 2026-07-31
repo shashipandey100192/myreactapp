@@ -1,8 +1,14 @@
 import React from 'react'
+import Lifesy from '../features/Lifesy'
 
 function Landingpage() {
   return (
-    <div>Landingpage</div>
+    <div>
+      <h2>Landingpage</h2>
+
+      <Lifesy/>
+      
+      </div>
   )
 }
 
