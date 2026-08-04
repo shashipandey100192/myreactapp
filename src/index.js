@@ -8,6 +8,7 @@ import Welcomepage from './modules/Welcomepage';
 import Applogin from './modules/apps/appauth/Applogin';
 import Userlogin from './modules/users/auth/Userlogin';
 import Landingpage from './modules/dashboard/Landingpage';
+import Errorpage from './modules/sharecomponents/Errorpage';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -19,7 +20,7 @@ root.render(
         <Route path='applist' element={<Welcomepage/>}></Route>
         <Route path='users' element={<Userlogin/>}></Route>
         <Route path='dashboard' element={<Landingpage/>}></Route>
-
+        <Route path='*' element={<Errorpage/>}></Route>
       </Routes>
     
     

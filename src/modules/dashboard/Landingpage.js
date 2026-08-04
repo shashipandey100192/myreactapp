@@ -1,10 +1,12 @@
 import React from 'react'
 import Lifesy from '../features/Lifesy'
+import Appheader from '../sharecomponents/Appheader'
 
 function Landingpage() {
   return (
     <div>
-      <h2>Landingpage</h2>
+    
+      <Appheader/>
 
       <Lifesy/>
       
