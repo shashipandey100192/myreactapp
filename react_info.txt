@@ -152,8 +152,24 @@ Note:Parsing error?
 	2) dyn 
 		useNavigate()
 ----------------------------------------------------------
-
 NOte: Each child in a list should have a unique "key" prop
+-----------------------------------------------------
+22) nested routing 
+	<Outlet>		// same lik container	
+----------------------------------------------------------
+23) network cells
+	1) fetch (core function)
+	2) axios (lib)
+ 
+24) param routing
+	1) send id on url
+		to={"userdetails/"+c.id}
+	2) routing 
+		path='users/userdetails/:id'
+	3) get id from url
+		 const id = useParams()
+	4) send id with url
+		 fetch(`https://dummyjson.com/users/${id}`)
 
 
 
