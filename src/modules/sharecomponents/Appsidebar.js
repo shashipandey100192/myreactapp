@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 function Appsidebar() {
     return (
-        <div class="flex-shrink-0 p-3 fixed-top cmt" >
+        <div class="flex-shrink-0 p-3 fixed-top cmt" style={{width:290}}>
             <a href="/" class="d-flex align-items-center pb-3 mb-3 link-body-emphasis text-decoration-none">
                 <span class="fs-5 fw-semibold">Collapsible</span> </a>
             <ul class="list-unstyled ps-0">

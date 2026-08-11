@@ -1,8 +1,13 @@
 import React from 'react'
+import Childpage from './Childpage'
 
 function Userreport() {
+  const username = "ravi singh";
   return (
-    <div>Userreport</div>
+    <div>Userreport
+<Childpage xyz={username}></Childpage>
+
+    </div>
   )
 }
 

@@ -170,6 +170,11 @@ NOte: Each child in a list should have a unique "key" prop
 		 const id = useParams()
 	4) send id with url
 		 fetch(`https://dummyjson.com/users/${id}`)
+---------------------------------------------------
+
+
+
+
 
 
 
