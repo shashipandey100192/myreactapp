@@ -17,6 +17,7 @@ function Appdata() {
             });
             const que = [...new Set(abc)]
            updatecy(que);
+           localStorage.setItem("dropdata",JSON.stringify(que));
 
             
 

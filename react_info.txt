@@ -171,6 +171,17 @@ NOte: Each child in a list should have a unique "key" prop
 	4) send id with url
 		 fetch(`https://dummyjson.com/users/${id}`)
 ---------------------------------------------------
+25) data share (data pass)
+	1) props		// pass data from parent to child
+	2) props driling	// parent to child to sub child (not projective)
+	3) context API		// group data share
+	4) storage		// but can't for sansative data 
+	5) redux		// global state management 
+26) chart (graph)
+	1) npm install recharts
+	2) import
+	3) inject 
+	
 
 
 
