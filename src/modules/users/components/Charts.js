@@ -51,20 +51,20 @@ import axios from 'axios';
 function Charts() {
 
   const [x, y] = useState([]);
-  const [cat,updatecat]=useState([]);
-  const [sv,sf]=useState([])
+  const [cat, updatecat] = useState([]);
+  const [sv, sf] = useState([])
 
   const myapidata = () => {
     axios.get("https://dummyjson.com/products?limit=100").then((d) => {
       console.log(d.data.products);
       y(d.data.products);
       sf(d.data.products);
-    
 
-      const a = d.data.products.map((r)=>{
-          return r.category
+
+      const a = d.data.products.map((r) => {
+        return r.category
       });
- 
+
       const quevlue = [...new Set(a)];
       console.log(quevlue);
       updatecat(quevlue);
@@ -72,10 +72,10 @@ function Charts() {
   }
 
 
-  const myopt = (e)=>{
+  const myopt = (e) => {
     console.log(e.target.value);
-    const xyz = sv.filter((f)=>{
-      return f.category===e.target.value;
+    const xyz = sv.filter((f) => {
+      return f.category === e.target.value;
     });
     console.log(xyz);
     y(xyz);
@@ -96,11 +96,11 @@ function Charts() {
         <div className='row'>
           <div className='col-md-3'>
             <select className='form-select' onChange={myopt}>
-             {cat.map((d)=>{
-              return(
-                <option>{d}</option>
-              )
-             })}
+              {cat.map((d) => {
+                return (
+                  <option>{d}</option>
+                )
+              })}
             </select>
           </div>
         </div>
@@ -113,7 +113,10 @@ function Charts() {
         {/* <CartesianGrid strokeDasharray="3 3" /> */}
         <XAxis dataKey="category" />
         <YAxis width="auto" />
-        <Tooltip />
+        <Tooltip shared={false}
+          labelFormatter={(label, payload) =>
+            payload?.[0]?.payload?.title
+          } />
         <Legend />
         <Bar dataKey="stock" fill="#ff0000" />
         <Bar dataKey="price" fill="#0066ff" />

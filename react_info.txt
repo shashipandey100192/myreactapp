@@ -180,7 +180,12 @@ NOte: Each child in a list should have a unique "key" prop
 26) chart (graph)
 	1) npm install recharts
 	2) import
-	3) inject 
+	3) inject
+	4)  charts type
+		1) static
+		2) dyn ( based on api) 
+------------------------------------------------------------
+
 	
 
 
