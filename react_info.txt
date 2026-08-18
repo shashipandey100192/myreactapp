@@ -128,6 +128,9 @@ Note: local project name and repo name must have same
 18) react input or form validation
 	1) custom (core js)
 	2) library(package)
+		1) npm install react-hook-form
+		2) import
+		3) inject 
 
 19) react hooks(special function) 
 	1) rules of hooks
@@ -185,6 +188,11 @@ NOte: Each child in a list should have a unique "key" prop
 		1) static
 		2) dyn ( based on api) 
 ------------------------------------------------------------
+27) notification (react-toastify) 
+	1) npm install react-toastify
+	2) import in particular component
+	3) inject 
+--------------------------------------------------------------
 
 	
 
