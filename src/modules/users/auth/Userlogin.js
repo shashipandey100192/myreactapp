@@ -1,11 +1,22 @@
 import React,{useState} from 'react'
 import { useForm } from "react-hook-form"
+import { useNavigate } from 'react-router-dom'
+import { toast,ToastContainer } from 'react-toastify'
 
 function Userlogin() {
+    const mynav = useNavigate();
     const {register,handleSubmit,formState: { errors }} = useForm()
 
 const myform = (myformdata)=>{
         console.log(myformdata);
+
+       if(myformdata.username==="admin@gmail.com" && myformdata.pass==="kumar")
+       {
+        toast.success("wecome",{theme:'dark',autoClose:1000});
+        setTimeout(()=>{
+            mynav('/dashboard')
+        },1000)
+       }
 }
 
 
@@ -16,9 +27,11 @@ const myform = (myformdata)=>{
         <form onSubmit={handleSubmit(myform)}>
         <div className="container-fluid login-bg">
             <div className="row vh-100 justify-content-center align-items-center">
+                <ToastContainer/>
                 <div className="col-12">
                     <div className="glass-card p-5">
                         <h2 className="text-center text-white mb-4">
+                        
                             User Login
                         </h2>
 

@@ -1,0 +1,21 @@
+{
+  "users": [
+    {
+      "username": "sdfsdf",
+      "email": "dfsdfssdf",
+      "id": "XtTVxeVUY10"
+    },
+    {
+      "username": "ravi",
+      "email": "ravi@gmail.com",
+      "id": "dXxmOEuFwLI"
+    },
+    {
+      "username": "shashi",
+      "email": "shashiweb64@gmail.com",
+      "id": "0tseU54Mlxg"
+    }
+  ],
+  "products": [],
+  "$schema": "./node_modules/json-server/schema.json"
+}

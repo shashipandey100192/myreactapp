@@ -14,6 +14,8 @@ import Userreport from './modules/users/components/Userreport';
 import Appdata from './modules/features/Appdata';
 import UserDetails from './modules/features/UserDetails';
 import Charts from './modules/users/components/Charts';
+import Userlist from './modules/users/components/Userlist';
+import Addusers from './modules/users/components/Addusers';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -30,6 +32,8 @@ root.render(
           <Route path='users' element={<Appdata/>}/>
           <Route path='users/userdetails/:id' element={<UserDetails/>}/>
           <Route path='mychart' element={<Charts/>}></Route>
+          <Route path='userlistpage' element={<Userlist/>}></Route>
+          <Route path='userlistpage/adduser' element={<Addusers/>}></Route>
 
           <Route path='*' element={<Errorpage/>}></Route>
         

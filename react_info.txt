@@ -129,8 +129,13 @@ Note: local project name and repo name must have same
 	1) custom (core js)
 	2) library(package)
 		1) npm install react-hook-form
-		2) import
+		2) import { useForm } from "react-hook-form"
 		3) inject 
+		4) validation with error messagae  ( formState: { errors } ) 
+			1) single error message
+			 	{errors.pass && message}
+			2) multi error message
+				{errors.pass?.type==="required" && message)
 
 19) react hooks(special function) 
 	1) rules of hooks
@@ -194,7 +199,10 @@ NOte: Each child in a list should have a unique "key" prop
 	3) inject 
 --------------------------------------------------------------
 
-	
+28) json server
+	1) npm install json-server
+	2) create a file outside src folder "mydatabase.json"
+	3) 
 
 
 
