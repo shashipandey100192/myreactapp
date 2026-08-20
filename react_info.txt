@@ -202,7 +202,16 @@ NOte: Each child in a list should have a unique "key" prop
 28) json server
 	1) npm install json-server
 	2) create a file outside src folder "mydatabase.json"
-	3) 
+	3) npx json-server mydatabase.json --watch --port 5800 
+
+29) param routing(query param routing)
+	1) send id on url
+		to={"useredit/"+u.id}
+	2) route component
+		 <Route path='userlistpage/useredit/:id' element={<Useredit/>}>
+	3) get id from url
+		
+
 
 
 
