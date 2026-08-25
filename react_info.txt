@@ -210,7 +210,37 @@ NOte: Each child in a list should have a unique "key" prop
 	2) route component
 		 <Route path='userlistpage/useredit/:id' element={<Useredit/>}>
 	3) get id from url
+		const {id} =useParams();
+	4) run api 
+-------------------------------------------------
+30) CRUD
+	C: create  / insert
+	R: read / view
+	U: update / edit
+	D: delete / remove
+
+31)  redux 
+	1) npm install @reduxjs/toolkit react-redux
+	2) create store 
+	3) wrap store with application 
 		
+
+---------------
+configureStore
+Provider
+reducer
+store
+createSlice 
+useSelector
+useSelector/useDispatch 
+dispatch 
+state
+actions
+---------------------
+	
+
+
+
 
 
 

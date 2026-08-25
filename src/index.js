@@ -17,11 +17,14 @@ import Charts from './modules/users/components/Charts';
 import Userlist from './modules/users/components/Userlist';
 import Addusers from './modules/users/components/Addusers';
 import Useredit from './modules/users/components/Useredit';
+import { Provider } from 'react-redux';
+import { mygodown } from './modules/reduxpage/Mystore';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+    <Provider store={mygodown}>
     <BrowserRouter>
       <Routes>
         <Route path='' element={<Applogin/>}></Route>
@@ -45,7 +48,7 @@ root.render(
     
     
     </BrowserRouter>
-
+</Provider>
 
 
   </React.StrictMode>
