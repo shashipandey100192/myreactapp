@@ -19,6 +19,7 @@ import Addusers from './modules/users/components/Addusers';
 import Useredit from './modules/users/components/Useredit';
 import { Provider } from 'react-redux';
 import { mygodown } from './modules/reduxpage/Mystore';
+import Reduxpage from './modules/reduxpage/Reduxpage';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -39,6 +40,7 @@ root.render(
           <Route path='userlistpage' element={<Userlist/>}></Route>
           <Route path='userlistpage/adduser' element={<Addusers/>}></Route>
           <Route path='userlistpage/useredit/:id' element={<Useredit/>}></Route>
+          <Route path='reduxpage' element={<Reduxpage/>}/>
 
           <Route path='*' element={<Errorpage/>}></Route>
         

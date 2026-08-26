@@ -16,6 +16,7 @@ function Appsidebar() {
                             <li><Link to="report" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Reports</Link></li>
                             <li><Link to="mychart" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Graph</Link></li>
                             <li><Link to="userlistpage" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Users</Link></li>
+                            <li><Link to="reduxpage" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Redux</Link></li>
                         </ul>
                     </div> </li> <li class="mb-1"> <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="false">
                         Dashboard

@@ -223,6 +223,7 @@ NOte: Each child in a list should have a unique "key" prop
 	1) npm install @reduxjs/toolkit react-redux
 	2) create store 
 	3) wrap store with application 
+	4) create actions 
 		
 
 ---------------
