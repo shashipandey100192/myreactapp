@@ -1,6 +1,9 @@
 import React,{useState} from 'react'
+import { useNavigate } from 'react-router-dom';
+import { toast,ToastContainer } from 'react-toastify';
 
 function Applogin() {
+    const mynav = useNavigate();
 
     // let a = "username";
     // let pass = "password";
@@ -17,8 +20,14 @@ function Applogin() {
     const [bg,updatebg]=useState("lightgray");
 
     const changefun = ()=>{
-        b("ooooooooooooooo");
-        y("text");
+       if(a==="app@gmail.com" && x==="1234")
+       {
+            toast.success("welcome to applist page",{autoClose:1000,theme:'dark'});
+            setTimeout(()=>{
+                mynav("/applist");
+            },1000);
+
+       }
     }
 
     const xyz = ()=>{
@@ -33,7 +42,13 @@ function Applogin() {
         updatebg("lightgray");
         }
     }
+    const updateuser = (e)=>{
+        b(e.target.value);
+    }
 
+    const passupdate = (p)=>{
+        y(p.target.value);
+    }
 
 
 
@@ -47,6 +62,7 @@ function Applogin() {
                 className="card shadow-lg p-4"
                 style={{ width: "400px", borderRadius: "15px",backgroundColor:bg }} >
                 <h2 className="text-center mb-4">App Login</h2>
+                <ToastContainer/>
                 <div className="mb-3">
                     <label className="form-label">
                         Username
@@ -58,6 +74,7 @@ function Applogin() {
                         className="form-control"
                         placeholder="Enter Username"
                         value={a}
+                        onInput={updateuser}
                     />
                 </div>
 
@@ -71,8 +88,9 @@ function Applogin() {
                         name="password"
                         className="form-control"
                         placeholder="Enter Password"
-                        value={a}
+                        value={x}
                         style={{display:abcd}}
+                        onInput={passupdate}
                     
                     />
                 </div>
